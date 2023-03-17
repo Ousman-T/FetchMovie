@@ -1,11 +1,11 @@
-
-
 function MovieDisplay(props){
     const {movie} = props;
-    return (
-        <div className="card" style={{width:"500px",}}>
+
+    const loaded = () => {
+        return(
+            <div className="card" style={{width:"500px",}}>
     <h1>Your Searched Movie</h1>
-    <img src={movie.Poster}/>
+    <img src={movie.Poster} alt={movie.Plot}/>
     <h2>{movie.Title}</h2>
     <h6>{movie.Director}</h6>
     <h6>{movie.Actors}</h6>
@@ -14,8 +14,12 @@ function MovieDisplay(props){
     <h6>{movie.Year}</h6>
     <h6>{movie.BoxOffice}</h6>
     </div>
-    )    
-}
+        )
+    }
+    const loading = () => <h1>No Movie to Display</h1>
+    return movie ? loaded() : loading();  
+
+};
 export default MovieDisplay;
     
 
