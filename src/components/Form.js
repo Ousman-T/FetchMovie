@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 function Form(props){
     const { movieSearch, setMovie } = props;
     // formData = object
@@ -15,7 +14,7 @@ function Form(props){
         setMovie(data)
     };
     return(
-    <div>
+        <div>
         <form onSubmit={handleSubmit}>
             <input type="text" 
             placeholder="Search Movie By Title..." 

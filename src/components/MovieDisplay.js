@@ -1,9 +1,13 @@
+import { useState } from "react";
+import BasicExample from "./Card";
+
 function MovieDisplay(props){
     const {movie} = props;
 
     const loaded = () => {
         return(
-            <div className="card" style={{width:"500px",}}>
+    <div>
+    <BasicExample>
     <h1>Your Searched Movie</h1>
     <img src={movie.Poster} alt={movie.Plot}/>
     <h2>{movie.Title}</h2>
@@ -13,6 +17,8 @@ function MovieDisplay(props){
     <h6>{movie.Plot}</h6>
     <h6>{movie.Year}</h6>
     <h6>{movie.BoxOffice}</h6>
+    </BasicExample>
+    
     </div>
         )
     }
