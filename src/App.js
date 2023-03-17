@@ -16,9 +16,9 @@ function App() {
   return (
     <div className="App">
       <Form movieSearch={getMovie}/>
-
+    <div style={{left:"30%", position:"relative"}}>
       {movie && <MovieDisplay movie={movie}/>}
-
+    </div>
     </div>
   );
 }

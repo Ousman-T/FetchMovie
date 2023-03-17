@@ -3,7 +3,7 @@
 function MovieDisplay(props){
     const {movie} = props;
     return (
-        <div>
+        <div className="card" style={{width:"500px",}}>
     <h1>Your Searched Movie</h1>
     <img src={movie.Poster}/>
     <h2>{movie.Title}</h2>
