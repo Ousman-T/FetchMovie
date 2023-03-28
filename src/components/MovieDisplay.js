@@ -1,4 +1,4 @@
-import BasicExample from "./Card";
+
 
 function MovieDisplay(props){
     const {movie} = props;
@@ -6,7 +6,6 @@ function MovieDisplay(props){
     const loaded = () => {
         return(
     <div>
-    <BasicExample>
     <h1>Your Searched Movie</h1>
     <img src={movie.Poster} alt={movie.Plot}/>
     <h2>{movie.Title}</h2>
@@ -16,7 +15,6 @@ function MovieDisplay(props){
     <h6>{movie.Plot}</h6>
     <h6>{movie.Year}</h6>
     <h6>{movie.BoxOffice}</h6>
-    </BasicExample>
     
     </div>
         )
