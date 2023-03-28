@@ -3,7 +3,6 @@ import { getMovie } from '../src/services/omdbAPI'
 import Form from './components/Form';
 import MovieDisplay from './components/MovieDisplay';
 import { useState, useEffect } from 'react';
-import BasicExample from './components/Card';
 
 
 function App() {

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import BasicExample from "./Card";
 
 function MovieDisplay(props){
